@@ -9,13 +9,24 @@
 
     <title>Guess Num Game</title>
 </head>
+
+<style>
+    .bg{
+        background-color: rgb(130, 205, 216);
+    }
+</style>
+
+
+
+
 <body>
-    <div class="d-flex flex-column container col-7 gap-3 justify-content-center align-items-center border border-dark border-opacity-25">
-    <h1>Guess the Number Game</h1>
-    <p>Enter a number between 1 and 100.</p>
-    <input class="p-2 " type="number" id="userInput" placeholder="Enter your guess">
-    <button class="p-2 px-3" onclick="checkGuess()">Guess Num</button>
+    <div class="bg d-flex flex-column container col-8 gap-3 justify-content-center align-items-center border border-dark border-opacity-50 p-2">
+    <h1 class="border border-dark px-2 border-3 text-white bg-black ">𝔾𝕦𝕖𝕤𝕤 𝕥𝕙𝕖 ℕ𝕦𝕞𝕓𝕖𝕣 𝔾𝕒𝕞𝕖 </h1>
+    <p>Enter a number between 1 and 100 in <span class="border-1 bg-black text-white" id="try"></span> Tries.</p>
+    <input class="p-1 " type="number" id="userInput" placeholder="Enter your guess" required="required">
+    <button class="p-1 px-2 btn bg-dark text-white" id="guess">Guess Num</button>
     <p id="message"></p>
+    <button class="p-1 px-2 btn bg-dark text-white" id="restart">restart</button>
 </div>
 
 
